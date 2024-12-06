@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Tienda de Videojuegos</title> 
+        <link rel="stylesheet" href="styles.css"> 
+        <script src="scripts.js" defer></script> 
+    </head> 
+        
+    <header>
+        <h1 style="font-size:4vw">K R O N O S  <em>game store</em></h1>
+        <a href="logout.php" class="logout-button"><button>Cerrar Sesión</button> </a>
+    </header>
+    <main>
+        <section class="games">
+            <!-- Aquí van las tarjetas de los videojuegos -->
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-US/games/forza-horizon-5" target="_blank">
+                <img src="portada1.jpg" alt="Forza Horizon 5"></a>
+                <h3>Forza Horizon 5</h3>
+                <p>Precio: $59.99</p>
+            </div>
+            
+            <div class="game-card">
+                <a href="https://www.nintendo.com/us/store/products/luigis-mansion-3-switch/" target="_blank">
+                <img src="portada2.jpg" alt="Luigi's Mansion 3"></a>    
+                <h3>Luigi's Mansion 3</h3>
+                <p>Precio: $59.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://store.steampowered.com/app/2124490/SILENT_HILL_2/" target="_blank">
+                <img src="portada3.jpg" alt="SILENT_HILL_2"></a>
+                <h3>Silent Hill 2</h3>
+                <p>Precio: $69.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-US/games/store/ori-and-the-blind-forest-definitive-edition/BW85KQB8Q31M/0001" target="_blank">
+                <img src="portada4.jpg" alt="ori-and-the-blind-forest-definitive-edition"></a>
+                <h3>Ori and the blind forest</h3>
+                <p>Precio: $19.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-us/games/store/stardew-valley/c3d891z6tnqm" target="_blank">
+                <img src="portada5.jpg" alt="Stradew Valley"></a>
+                <h3>Stardew Valley</h3>
+                <p>Precio: $14.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-US/games/store/bioshock-remastered/BNCBCS5RJWH7/0001" target="_blank">
+                <img src="portada6.jpg" alt="BioShock"></a>
+                <h3>BioShock</h3>
+                <p>Precio: $19.99</p>
+            </div>
+            <div class="game-card">
+                <a href ="https://www.xbox.com/en-US/games/store/outlast-2/9N633BP2KCKD/0010" target="_blank">
+                <img src="portada7.png" alt="Outlast 2"></a>
+                <h3>Outlast 2</h3>
+                <p>Precio: $29.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.nintendo.com/us/store/products/the-legend-of-zelda-tears-of-the-kingdom-switch/" target="_blank">
+                <img src="portada8.jpg" alt="The legend of Zelda: Tears of the kingdom"></a>
+                <h3>The legend of Zelda: Tears of the kingdom</h3>
+                <p>Precio: $69.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-us/games/store/little-nightmares/bwd88k55mk5w" target="_blank">
+                <img src="portada9.jpg" alt="Little Nightmares"></a>
+                <h3>Little Nightmares</h3>
+                <p>Precio: $19.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-us/games/store/little-nightmares-ii/c1h74n0tr8kt" target="_blank">
+                <img src="portada10.JPG" alt="Little Nightmares 2"></a>
+                <h3>Little Nightmares 2</h3>
+                <p>Precio: $29.99</p>
+            </div>
+            <div class="game-card">
+                <a href="https://www.xbox.com/en-us/games/store/little-nightmares-iii/9pmwb693zk7x" target="_blank">
+                <img src="portada11.jpg" alt="Little Nightmares 3"></a>
+                <h3>Little Nightmares 3</h3>
+                <p>Precio: $49.99</p>
+            </div>
+            <div class="game-card">
+                <a href ="https://www.xbox.com/en-us/games/store/bioshock-2-remastered/bp8t903fzl2x" target="_blank">
+                <img src="portada12.jpg" alt="BioShock 2"></a>
+                <h3>BioShock 2</h3>
+                <p>Precio: $19.99</p>
+            </div>
+            <!-- Puedes agregar más tarjetas aquí -->
+        </section>
+        <audio id="background-audio" src="Background2.mp3" loop></audio>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Videojuegos. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        window.addEventListener('load', function() {
+          const audio = document.getElementById('background-audio');
+          audio.play().catch(error => {
+            console.log("El navegador bloqueó la reproducción automática. Haz clic en cualquier parte de la página para empezar el audio.");
+          });
+    
+          document.body.addEventListener('click', function() {
+            audio.play();
+          });
+        });
+      </script>
+</body>
+</html>
